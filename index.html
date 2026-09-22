@@ -167,4 +167,1576 @@
           <i class="fa-solid fa-house"></i>
           <span>HOME</span>
         </button>
-        <button id="nav-materi1" onclick="switchTab('materi1')" class="nav-btn px-4
+        <button id="nav-materi1" onclick="switchTab('materi1')" class="nav-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg flex items-center space-x-2 whitespace-nowrap transition">
+          <i class="fa-solid fa-book-open"></i>
+          <span>MATERI 1</span>
+        </button>
+        <button id="nav-materi2" onclick="switchTab('materi2')" class="nav-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg flex items-center space-x-2 whitespace-nowrap transition">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>MATERI 2</span>
+        </button>
+        <button id="nav-game" onclick="switchTab('game')" class="nav-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg flex items-center space-x-2 whitespace-nowrap transition">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>GAME KUIS</span>
+        </button>
+        <button id="nav-evaluasi" onclick="switchTab('evaluasi')" class="nav-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg flex items-center space-x-2 whitespace-nowrap transition">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <span>EVALUASI</span>
+        </button>
+        <button id="nav-profil" onclick="switchTab('profil')" class="nav-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg flex items-center space-x-2 whitespace-nowrap transition">
+          <i class="fa-solid fa-id-badge"></i>
+          <span>PROFIL GURU</span>
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: HOME                               -->
+    <!-- ========================================== -->
+    <section id="view-home" class="tab-content space-y-8 animate-fadeIn">
+      
+      <!-- Hero Banner -->
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-700 via-indigo-600 to-purple-800 text-white p-8 sm:p-12 shadow-2xl">
+        <div class="absolute -right-10 -bottom-10 opacity-15 text-9xl font-black select-none pointer-events-none">
+          $P(A)$
+        </div>
+        <div class="relative z-10 max-w-3xl space-y-4">
+          <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-indigo-100 border border-white/20">
+            <i class="fa-solid fa-school"></i>
+            <span>SMA NEGERI 1 KERSANA</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+            E-Learning Interactive: <br>BAB 2 PELUANG
+          </h2>
+          <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+            Selamat datang di media pembelajaran interaktif Matematika Kelas XII. Pelajari teori peluang kejadian tunggal dan majemuk, latih kemampuanmu lewat simulasi game balapan kuis, dan evaluasi pemahamanmu secara menyeluruh.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <button onclick="switchTab('materi1')" class="bg-white text-indigo-700 hover:bg-indigo-50 font-bold px-5 py-2.5 rounded-xl shadow-lg transition flex items-center space-x-2 text-sm">
+              <i class="fa-solid fa-play"></i>
+              <span>Mulai Belajar</span>
+            </button>
+            <button onclick="switchTab('game')" class="bg-indigo-900/60 hover:bg-indigo-900/80 text-white font-semibold px-5 py-2.5 rounded-xl border border-white/20 backdrop-blur-sm transition flex items-center space-x-2 text-sm">
+              <i class="fa-solid fa-trophy text-amber-400"></i>
+              <span>Mainkan Game Kuis</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation Menu Cards (4 Icons) -->
+      <div>
+        <h3 class="text-xl font-extrabold text-slate-800 dark:text-white mb-6 flex items-center space-x-2">
+          <i class="fa-solid fa-cubes text-indigo-500"></i>
+          <span>Menu Utama Pembelajaran</span>
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: MATERI 1 -->
+          <div onclick="switchTab('materi1')" class="glass-card rounded-2xl p-6 cursor-pointer card-hover-glow flex flex-col justify-between group border-l-4 border-indigo-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-dice text-3xl"></i>
+              </div>
+              <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Modul 2.1</span>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">MATERI 1</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                Peluang Suatu Kejadian: Ruang sampel, titik sampel, kisaran nilai peluang, & komplemen kejadian.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+              <span>Buka Materi</span>
+              <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Card 2: MATERI 2 -->
+          <div onclick="switchTab('materi2')" class="glass-card rounded-2xl p-6 cursor-pointer card-hover-glow flex flex-col justify-between group border-l-4 border-cyan-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 dark:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-diagram-project text-3xl"></i>
+              </div>
+              <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider">Modul 2.2</span>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition">MATERI 2</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                Peluang Kejadian Majemuk: Frekuensi harapan, saling lepas, tidak saling lepas, & saling bebas bersyarat.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-cyan-600 dark:text-cyan-400">
+              <span>Buka Materi</span>
+              <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Card 3: GAME KUIS -->
+          <div onclick="switchTab('game')" class="glass-card rounded-2xl p-6 cursor-pointer card-hover-glow flex flex-col justify-between group border-l-4 border-amber-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-flag-checkered text-3xl"></i>
+              </div>
+              <span class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">Interaktif Dua Kelompok</span>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition">GAME KUIS</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                Adu cepat balapan menjawab soal peluang antara Kelompok 1 dan Kelompok 2 secara split screen!
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400">
+              <span>Mulai Arena Game</span>
+              <i class="fa-solid fa-gamepad group-hover:rotate-12 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Card 4: EVALUASI -->
+          <div onclick="switchTab('evaluasi')" class="glass-card rounded-2xl p-6 cursor-pointer card-hover-glow flex flex-col justify-between group border-l-4 border-emerald-500">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-file-pen text-3xl"></i>
+              </div>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Ujian & Asesmen</span>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition">EVALUASI</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                4 Bagian Soal (PG, PG Kompleks, Benar/Salah, Menjodohkan) dengan Timer 36 Menit & Skor Langsung.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+              <span>Mulai Pengerjaan</span>
+              <i class="fa-solid fa-circle-play group-hover:scale-110 transition-transform"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Teacher Info Banner -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-indigo-100 dark:border-slate-800">
+        <div class="flex items-center space-x-4">
+          <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl font-black shadow-md">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div>
+            <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase">Guru Pengampu Matematika</span>
+            <h4 class="text-lg font-bold text-slate-900 dark:text-white">M. FAISAL ABDUH, M.Pd.</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400">NIP. 199104032020121014 | SMA NEGERI 1 KERSANA</p>
+          </div>
+        </div>
+        <a href="https://gurufa119.github.io/cv" target="_blank" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition shadow-md flex items-center space-x-2 whitespace-nowrap">
+          <i class="fa-solid fa-address-card"></i>
+          <span>Lihat Profil & CV Lengkap</span>
+          <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: MATERI 1                           -->
+    <!-- ========================================== -->
+    <section id="view-materi1" class="tab-content hidden space-y-8 animate-fadeIn">
+      
+      <!-- Header Module -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border-l-8 border-indigo-600">
+        <div class="flex items-center space-x-2 text-indigo-600 dark:text-indigo-400 font-bold text-xs uppercase tracking-widest mb-1">
+          <i class="fa-solid fa-dice-d6"></i>
+          <span>SUB BAB 2.1</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+          MATERI 1: PELUANG SUATU KEJADIAN
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+          Konsep dasar ruang sampel, titik sampel, perhitungan peluang teoritis, serta komplemen suatu kejadian.
+        </p>
+      </div>
+
+      <!-- Tujuan & Indikator Box -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Tujuan Pembelajaran -->
+        <div class="glass-card rounded-2xl p-6 bg-gradient-to-br from-indigo-500/5 to-purple-500/5">
+          <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 dark:text-white">Tujuan Pembelajaran</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+            Menerapkan konsep kombinatorik dalam menentukan peluang suatu kejadian untuk menganalisis situasi nyata yang melibatkan ketidakpastian secara logis dan menyenangkan.
+          </p>
+        </div>
+
+        <!-- Indikator Ketercapaian -->
+        <div class="glass-card rounded-2xl p-6 bg-gradient-to-br from-purple-500/5 to-pink-500/5">
+          <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 dark:text-white">Indikator Ketercapaian</h3>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-circle-check text-indigo-500 mt-1"></i>
+              <span><strong>(a)</strong> Menjelaskan pengertian ruang sampel dan titik sampel.</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-circle-check text-indigo-500 mt-1"></i>
+              <span><strong>(b)</strong> Menjelaskan pengertian peluang suatu kejadian serta menghitung nilainya.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Uraian Materi Lengkap -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center space-x-2">
+          <i class="fa-solid fa-book-bookmark text-indigo-500"></i>
+          <span>Jabaran Materi Lengkap</span>
+        </h3>
+
+        <!-- Sub 1: Ruang Sampel -->
+        <div class="space-y-3">
+          <h4 class="text-base font-bold text-indigo-600 dark:text-indigo-400">1. Ruang Sampel dan Titik Sampel</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Percobaan acak adalah suatu kegiatan yang hasil spesifiknya tidak dapat dipastikan sebelumnya, tetapi semua kemungkinan hasilnya dapat didaftar.
+          </p>
+          <div class="bg-indigo-50/50 dark:bg-slate-800/60 p-4 rounded-xl border border-indigo-100 dark:border-slate-700 space-y-2 text-xs sm:text-sm">
+            <p><strong>Ruang Sampel ($S$):</strong> Himpunan dari semua hasil yang mungkin terjadi dari suatu percobaan acak. Banyak anggota ruang sampel dilambangkan dengan $n(S)$.</p>
+            <p><strong>Titik Sampel:</strong> Setiap anggota tunggal yang terdapat di dalam ruang sampel $S$.</p>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 italic">
+            Contoh: Pada pelemparan sebuah dadu bermata 6, ruang sampelnya adalah $S = \{1, 2, 3, 4, 5, 6\}$ dengan $n(S) = 6$.
+          </p>
+        </div>
+
+        <!-- Sub 2: Peluang Suatu Kejadian -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-base font-bold text-indigo-600 dark:text-indigo-400">2. Peluang Suatu Kejadian</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Jika $A$ adalah suatu kejadian dalam ruang sampel $S$, maka peluang terjadinya kejadian $A$ (dilambangkan dengan $P(A)$) didefinisikan sebagai rasio/perbandingan antara banyaknya anggota kejadian $A$ terhadap banyaknya anggota ruang sampel $S$.
+          </p>
+          
+          <div class="p-4 rounded-2xl bg-indigo-600 text-white shadow-md text-center">
+            <p class="text-xs font-semibold uppercase tracking-wider text-indigo-200 mb-1">Rumus Utama Peluang Kejadian</p>
+            <div class="text-lg sm:text-2xl font-black tracking-wide my-1">
+              $$P(A) = \frac{n(A)}{n(S)}$$
+            </div>
+            <p class="text-[11px] text-indigo-100">Keterangan: $P(A) =$ Peluang kejadian $A$, $n(A) =$ Banyaknya anggota kejadian $A$, $n(S) =$ Banyaknya anggota ruang sampel $S$.</p>
+          </div>
+        </div>
+
+        <!-- Sub 3: Kisaran Nilai Peluang & Komplemen -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-base font-bold text-indigo-600 dark:text-indigo-400">3. Kisaran Nilai Peluang & Komplemen Kejadian</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Nilai peluang suatu kejadian selalu berada di antara 0 sampai dengan 1 inclusive:
+          </p>
+          <div class="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl text-center font-bold text-indigo-600 dark:text-indigo-400">
+            $$0 \le P(A) \le 1$$
+          </div>
+          <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+            <li>Jika $P(A) = 0$, artinya kejadian $A$ adalah <strong>Kejadian Mustahil</strong> (tidak mungkin terjadi).</li>
+            <li>Jika $P(A) = 1$, artinya kejadian $A$ adalah <strong>Kejadian Pasti</strong> (pasti terjadi).</li>
+          </ul>
+
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
+            <strong>Komplemen Kejadian ($A^c$ atau $A'$):</strong> Himpunan kejadian tidak terjadinya $A$. Hubungan antara peluang kejadian $A$ dan komplemennya $A^c$ dituliskan sebagai:
+          </p>
+          <div class="p-3 bg-purple-50 dark:bg-purple-950/40 rounded-xl text-center font-bold text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+            $$P(A^c) = 1 - P(A) \quad \iff \quad P(A) + P(A^c) = 1$$
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Latihan Soal & Pembahasan -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center space-x-2">
+          <i class="fa-solid fa-pen-ruler text-indigo-500"></i>
+          <span>Latihan Soal & Pembahasan Lengkap</span>
+        </h3>
+
+        <!-- Soal 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 font-bold text-xs rounded-lg">Soal 1 (Ruang Sampel & Peluang)</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+            Dua buah dadu dilempar undi secara bersamaan satu kali. Tentukan peluang munculnya jumlah kedua mata dadu sama dengan 8!
+          </p>
+          <details class="group">
+            <summary class="cursor-pointer text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Lihat Pembahasan Lengkap</span>
+            </summary>
+            <div class="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-2 border border-slate-200 dark:border-slate-800">
+              <p><strong>Pembahasan:</strong></p>
+              <p>Banyaknya anggota ruang sampel pelemparan 2 dadu: $n(S) = 6 \times 6 = 36$.</p>
+              <p>Misalkan $A$ adalah kejadian muncul jumlah mata dadu = 8:</p>
+              <p>$A = \{(2,6), (3,5), (4,4), (5,3), (6,2)\}$ $\implies n(A) = 5$.</p>
+              <p>Maka peluangnya adalah:</p>
+              <p>$$P(A) = \frac{n(A)}{n(S)} = \frac{5}{36}$$</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Soal 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 font-bold text-xs rounded-lg">Soal 2 (Komplemen Kejadian)</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+            Peluang seorang siswa SMA Negeri 1 Kersana lulus ujian mandiri PTN adalah $0{,}85$. Berapakah peluang siswa tersebut TIDAK lulus ujian mandiri PTN?
+          </p>
+          <details class="group">
+            <summary class="cursor-pointer text-xs font-bold text-purple-600 dark:text-purple-400 group-hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Lihat Pembahasan Lengkap</span>
+            </summary>
+            <div class="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-2 border border-slate-200 dark:border-slate-800">
+              <p><strong>Pembahasan:</strong></p>
+              <p>Misalkan $A$ = kejadian lulus ujian, dengan $P(A) = 0{,}85$.</p>
+              <p>Kejadian tidak lulus adalah komplemen dari $A$, yaitu $A^c$.</p>
+              <p>$$P(A^c) = 1 - P(A) = 1 - 0{,}85 = 0{,}15$$</p>
+              <p>Jadi, peluang siswa tersebut tidak lulus adalah $0{,}15$ atau $15\%$.</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 3: MATERI 2                           -->
+    <!-- ========================================== -->
+    <section id="view-materi2" class="tab-content hidden space-y-8 animate-fadeIn">
+      
+      <!-- Header Module -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border-l-8 border-cyan-600">
+        <div class="flex items-center space-x-2 text-cyan-600 dark:text-cyan-400 font-bold text-xs uppercase tracking-widest mb-1">
+          <i class="fa-solid fa-diagram-next"></i>
+          <span>SUB BAB 2.2</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+          MATERI 2: PELUANG KEJADIAN MAJEMUK
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+          Frekuensi harapan, gabungan dua kejadian (saling lepas & tidak saling lepas), kejadian saling bebas, serta peluang bersyarat.
+        </p>
+      </div>
+
+      <!-- Tujuan & Indikator Box -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Tujuan Pembelajaran -->
+        <div class="glass-card rounded-2xl p-6 bg-gradient-to-br from-cyan-500/5 to-blue-500/5">
+          <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 dark:text-white">Tujuan Pembelajaran</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+            Menerapkan konsep kombinatorik dalam menentukan peluang kejadian majemuk untuk menganalisis situasi nyata yang melibatkan ketidakpastian secara logis dan menyenangkan.
+          </p>
+        </div>
+
+        <!-- Indikator Ketercapaian -->
+        <div class="glass-card rounded-2xl p-6 bg-gradient-to-br from-blue-500/5 to-indigo-500/5">
+          <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-900 dark:text-white">Indikator Ketercapaian</h3>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i>
+              <span><strong>(a)</strong> Menjelaskan pengertian kejadian majemuk, menghitung frekuensi harapan.</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i>
+              <span><strong>(b)</strong> Menganalisis peluang kejadian majemuk saling lepas dan saling bebas.</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i>
+              <span><strong>(c)</strong> Menjelaskan dan menghitung peluang kejadian bersyarat.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Uraian Materi Lengkap -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center space-x-2">
+          <i class="fa-solid fa-book-open-reader text-cyan-500"></i>
+          <span>Jabaran Materi Lengkap</span>
+        </h3>
+
+        <!-- Sub 1: Frekuensi Harapan -->
+        <div class="space-y-3">
+          <h4 class="text-base font-bold text-cyan-600 dark:text-cyan-400">1. Frekuensi Harapan ($F_h$)</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Frekuensi harapan dari suatu kejadian adalah banyaknya kejadian yang diharapkan terjadi dalam sejumlah $n$ kali percobaan yang dilakukan.
+          </p>
+          <div class="p-3 bg-cyan-50 dark:bg-cyan-950/40 rounded-xl text-center font-bold text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800">
+            $$F_h(A) = n \times P(A)$$
+          </div>
+        </div>
+
+        <!-- Sub 2: Kejadian Saling Lepas & Tidak Saling Lepas -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-base font-bold text-cyan-600 dark:text-cyan-400">2. Kejadian Saling Lepas & Tidak Saling Lepas</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Dua kejadian $A$ dan $B$ dikatakan <strong>saling lepas</strong> jika kejadian $A$ dan $B$ tidak mungkin terjadi bersamaan ($A \cap B = \emptyset$).
+          </p>
+          <div class="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl text-center font-bold text-indigo-600 dark:text-indigo-400">
+            $$P(A \cup B) = P(A) + P(B)$$
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
+            Apabila terdapat irisan antara $A$ dan $B$ ($A \cap B \neq \emptyset$), maka kejadian disebut <strong>tidak saling lepas</strong>:
+          </p>
+          <div class="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl text-center font-bold text-purple-600 dark:text-purple-400">
+            $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+          </div>
+        </div>
+
+        <!-- Sub 3: Kejadian Saling Bebas -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-base font-bold text-cyan-600 dark:text-cyan-400">3. Kejadian Saling Bebas</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Dua kejadian $A$ dan $B$ dikatakan <strong>saling bebas</strong> jika terjadinya kejadian $A$ tidak mempengaruhi peluang terjadinya kejadian $B$, dan sebaliknya.
+          </p>
+          <div class="p-3 bg-emerald-50 dark:bg-emerald-950/40 rounded-xl text-center font-bold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+            $$P(A \cap B) = P(A) \times P(B)$$
+          </div>
+        </div>
+
+        <!-- Sub 4: Peluang Bersyarat -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-base font-bold text-cyan-600 dark:text-cyan-400">4. Peluang Bersyarat</h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Peluang terjadinya kejadian $A$ dengan syarat kejadian $B$ telah terjadi terlebih dahulu dituliskan sebagai $P(A|B)$:
+          </p>
+          <div class="p-3 bg-amber-50 dark:bg-amber-950/40 rounded-xl text-center font-bold text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+            $$P(A|B) = \frac{P(A \cap B)}{P(B)}, \quad \text{dengan } P(B) > 0$$
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Latihan Soal & Pembahasan -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center space-x-2">
+          <i class="fa-solid fa-pen-ruler text-cyan-500"></i>
+          <span>Latihan Soal & Pembahasan Lengkap</span>
+        </h3>
+
+        <!-- Soal 1 -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300 font-bold text-xs rounded-lg">Soal 1 (Saling Lepas)</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+            Dari satu set kartu Remi (52 kartu), diambil satu kartu secara acak. Hitunglah peluang terambilnya kartu bernomor As ATAU kartu bergambar King!
+          </p>
+          <details class="group">
+            <summary class="cursor-pointer text-xs font-bold text-cyan-600 dark:text-cyan-400 group-hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Lihat Pembahasan Lengkap</span>
+            </summary>
+            <div class="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-2 border border-slate-200 dark:border-slate-800">
+              <p><strong>Pembahasan:</strong></p>
+              <p>$n(S) = 52$.</p>
+              <p>Kartu As ($A$): $n(A) = 4 \implies P(A) = \frac{4}{52}$.</p>
+              <p>Kartu King ($B$): $n(B) = 4 \implies P(B) = \frac{4}{52}$.</p>
+              <p>Karena tidak ada kartu yang sekaligus merupakan As dan King ($A \cap B = \emptyset$), maka kejadian ini saling lepas:</p>
+              <p>$$P(A \cup B) = P(A) + P(B) = \frac{4}{52} + \frac{4}{52} = \frac{8}{52} = \frac{2}{13}$$</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Soal 2 -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 font-bold text-xs rounded-lg">Soal 2 (Saling Bebas & Frekuensi Harapan)</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+            Sebuah dadu dan sebuah koin dilempar bersamaan sebanyak 120 kali. Berapakah frekuensi harapan munculnya mata dadu ganjil DAN gambar pada koin?
+          </p>
+          <details class="group">
+            <summary class="cursor-pointer text-xs font-bold text-emerald-600 dark:text-emerald-400 group-hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Lihat Pembahasan Lengkap</span>
+            </summary>
+            <div class="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-2 border border-slate-200 dark:border-slate-800">
+              <p><strong>Pembahasan:</strong></p>
+              <p>Peluang dadu ganjil ($A$): $P(A) = \frac{3}{6} = \frac{1}{2}$.</p>
+              <p>Peluang koin gambar ($B$): $P(B) = \frac{1}{2}$.</p>
+              <p>Karena kejadian saling bebas:</p>
+              <p>$$P(A \cap B) = P(A) \times P(B) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$$</p>
+              <p>Frekuensi Harapan untuk $n = 120$ kali pelemparan:</p>
+              <p>$$F_h = n \times P(A \cap B) = 120 \times \frac{1}{4} = 30 \text{ kali}$$</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Soal 3 -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 font-bold text-xs rounded-lg">Soal 3 (Peluang Bersyarat)</span>
+            <span class="text-[10px] font-semibold text-slate-400 dark:text-slate-500">Adaptasi Latihan 4.3 No. 1</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
+            Dua buah dadu dilempar secara bersamaan. Misalkan $A$ adalah kejadian hasil kali kedua mata dadu sama dengan 12 dan $B$ adalah kejadian jumlah kedua mata dadu sama dengan 8. Tentukan $P(A|B)$ dan $P(B|A)$.
+          </p>
+          <details class="group">
+            <summary class="cursor-pointer text-xs font-bold text-amber-600 dark:text-amber-400 group-hover:underline flex items-center space-x-1">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Lihat Pembahasan Lengkap</span>
+            </summary>
+            <div class="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-2 border border-slate-200 dark:border-slate-800">
+              <p><strong>Pembahasan:</strong></p>
+              <p>Ruang sampel dua dadu memiliki $n(S)=36$.</p>
+              <p>Kejadian $A$ (hasil kali 12): $A=\{(2,6),(3,4),(4,3),(6,2)\}$, sehingga $n(A)=4$.</p>
+              <p>Kejadian $B$ (jumlah 8): $B=\{(2,6),(3,5),(4,4),(5,3),(6,2)\}$, sehingga $n(B)=5$.</p>
+              <p>Irisan kedua kejadian: $A\cap B=\{(2,6),(6,2)\}$, sehingga $n(A\cap B)=2$.</p>
+              <p>Gunakan rumus peluang bersyarat $P(A|B)=\frac{P(A\cap B)}{P(B)}$:</p>
+              <p>$$P(A|B)=\frac{2/36}{5/36}=\frac{2}{5}$$</p>
+              <p>Selanjutnya, $P(B|A)=\frac{P(A\cap B)}{P(A)}$:</p>
+              <p>$$P(B|A)=\frac{2/36}{4/36}=\frac{1}{2}$$</p>
+              <p><strong>Jadi, $P(A|B)=\frac{2}{5}$ dan $P(B|A)=\frac{1}{2}$.</strong></p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 4: GAME KUIS                          -->
+    <!-- ========================================== -->
+    <section id="view-game" class="tab-content hidden space-y-6 animate-fadeIn">
+      
+      <!-- Game Intro Banner -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-red-500/10 border border-amber-200 dark:border-amber-900/50">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-amber-500 text-white font-black text-xs uppercase tracking-wider">MODAL PERTANDINGAN DUA KELOMPOK</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-2 flex items-center space-x-3">
+              <i class="fa-solid fa-[#f59e0b] fa-flag-checkered text-amber-500"></i>
+              <span>BALAPAN KUIS PELUANG</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Dua kelompok bertanding dalam satu layar (Split Screen). Siapa cepat dan tepat menjawab soal matematika peluang akan memajukan mobil balapnya hingga garis FINISH!
+            </p>
+          </div>
+
+          <button id="btnStartGame" onclick="initGameEngine()" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-extrabold text-sm shadow-xl transition transform hover:scale-105 flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-play text-lg"></i>
+            <span>Mulai Balapan Baru</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pengaturan Nama Kelompok -->
+      <div class="glass-card rounded-3xl p-5 sm:p-6 border border-amber-200 dark:border-amber-900/50">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-extrabold text-sm uppercase tracking-wider">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <span>Pengaturan Nama Kelompok</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ganti nama kedua kelompok sebelum pertandingan. Nama akan tampil di lintasan, panel soal, dan pengumuman pemenang.</p>
+          </div>
+          <button type="button" onclick="applyTeamNames()" class="w-full lg:w-auto px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-extrabold shadow-md transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-check"></i>
+            <span>Terapkan Nama</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div>
+            <label for="teamNameInput1" class="block text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase mb-1.5">Nama Kelompok 1</label>
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <input id="teamNameInput1" type="text" maxlength="30" value="KELOMPOK 1" placeholder="Contoh: TIM PELUANG A"
+                     class="w-full px-4 py-2.5 rounded-xl border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-slate-800 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500 text-sm font-semibold">
+            </div>
+          </div>
+
+          <div>
+            <label for="teamNameInput2" class="block text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase mb-1.5">Nama Kelompok 2</label>
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <input id="teamNameInput2" type="text" maxlength="30" value="KELOMPOK 2" placeholder="Contoh: TIM PELUANG B"
+                     class="w-full px-4 py-2.5 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-white dark:bg-slate-800 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-semibold">
+            </div>
+          </div>
+        </div>
+        <div id="teamNameStatus" class="mt-3 text-[11px] font-semibold text-slate-500 dark:text-slate-400 min-h-[16px]"></div>
+      </div>
+
+      <!-- Arena Game Visual Track -->
+      <div class="glass-card rounded-3xl p-6 space-y-6">
+        <h3 class="text-base font-bold text-slate-800 dark:text-white flex items-center justify-between">
+          <span><i class="fa-solid fa-road text-amber-500 mr-2"></i>Lintasan Arena Balapan</span>
+          <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Target: 5 Jawaban Benar Pertama</span>
+        </h3>
+
+        <!-- Track Visual -->
+        <div class="space-y-4">
+          <!-- Track Team 1 -->
+          <div class="bg-slate-900 p-4 rounded-2xl relative overflow-hidden shadow-inner">
+            <div class="flex items-center justify-between text-xs text-white font-bold mb-2">
+              <span class="text-indigo-400 flex items-center space-x-2">
+                <i class="fa-solid fa-car-side"></i>
+                <span id="labelTeam1">KELOMPOK 1</span>
+              </span>
+              <span id="scoreTeam1" class="bg-indigo-600 px-3 py-0.5 rounded-full">0 / 5</span>
+            </div>
+            <div class="w-full h-8 bg-slate-800 rounded-lg relative overflow-hidden border border-slate-700">
+              <div id="carTeam1" class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-indigo-600 to-purple-600 w-12 rounded-lg transition-all duration-500 flex items-center justify-center text-white text-xs font-black shadow-lg">
+                🏎️ 1
+              </div>
+            </div>
+          </div>
+
+          <!-- Track Team 2 -->
+          <div class="bg-slate-900 p-4 rounded-2xl relative overflow-hidden shadow-inner">
+            <div class="flex items-center justify-between text-xs text-white font-bold mb-2">
+              <span class="text-emerald-400 flex items-center space-x-2">
+                <i class="fa-solid fa-car-side"></i>
+                <span id="labelTeam2">KELOMPOK 2</span>
+              </span>
+              <span id="scoreTeam2" class="bg-emerald-600 px-3 py-0.5 rounded-full">0 / 5</span>
+            </div>
+            <div class="w-full h-8 bg-slate-800 rounded-lg relative overflow-hidden border border-slate-700">
+              <div id="carTeam2" class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-emerald-500 to-teal-600 w-12 rounded-lg transition-all duration-500 flex items-center justify-center text-white text-xs font-black shadow-lg">
+                🏎️ 2
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Split Screen Game Question Play Area -->
+      <div id="gamePlayArea" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- PLAYER / TEAM 1 PANEL -->
+        <div class="glass-card rounded-3xl p-6 border-t-8 border-indigo-600 space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+              <h4 class="font-extrabold text-indigo-600 dark:text-indigo-400 text-lg flex items-center space-x-2">
+                <i class="fa-solid fa-users"></i>
+                <span id="panelLabelTeam1">KELOMPOK 1</span>
+              </h4>
+              <span id="questionLabelTeam1" class="text-xs px-2 py-1 rounded bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-bold">SOAL KELOMPOK 1</span>
+            </div>
+
+            <div class="my-4 min-h-[90px]">
+              <p id="qTextTeam1" class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100">
+                Klik "Mulai Balapan Baru" di atas untuk memulai permainan!
+              </p>
+            </div>
+
+            <div id="optsTeam1" class="space-y-2">
+              <!-- Options injected by JS -->
+            </div>
+          </div>
+          <div id="feedbackTeam1" class="mt-3 text-center text-xs font-bold min-h-[20px]"></div>
+        </div>
+
+        <!-- PLAYER / TEAM 2 PANEL -->
+        <div class="glass-card rounded-3xl p-6 border-t-8 border-emerald-500 space-y-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+              <h4 class="font-extrabold text-emerald-600 dark:text-emerald-400 text-lg flex items-center space-x-2">
+                <i class="fa-solid fa-users"></i>
+                <span id="panelLabelTeam2">KELOMPOK 2</span>
+              </h4>
+              <span id="questionLabelTeam2" class="text-xs px-2 py-1 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold">SOAL KELOMPOK 2</span>
+            </div>
+
+            <div class="my-4 min-h-[90px]">
+              <p id="qTextTeam2" class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100">
+                Klik "Mulai Balapan Baru" di atas untuk memulai permainan!
+              </p>
+            </div>
+
+            <div id="optsTeam2" class="space-y-2">
+              <!-- Options injected by JS -->
+            </div>
+          </div>
+          <div id="feedbackTeam2" class="mt-3 text-center text-xs font-bold min-h-[20px]"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 5: EVALUASI                           -->
+    <!-- ========================================== -->
+    <section id="view-evaluasi" class="tab-content hidden space-y-8 animate-fadeIn">
+      
+      <!-- Phase 1: Form Identitas Siswa -->
+      <div id="evaluasiFormPhase" class="glass-card rounded-3xl p-8 max-w-2xl mx-auto space-y-6 shadow-2xl border-t-8 border-emerald-500">
+        <div class="text-center space-y-2">
+          <div class="w-16 h-16 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center mx-auto text-3xl font-black">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h2 class="text-2xl font-black text-slate-900 dark:text-white">FORM IDENTITAS SISWA</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            Isikan identitas resmi diri Anda sebelum memulai pengerjaan Evaluasi Bab 2 Peluang.
+          </p>
+        </div>
+
+        <form id="studentIdentityForm" onsubmit="startEvaluasiExam(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Nama Lengkap Siswa</label>
+            <input type="text" id="studentName" required placeholder="Contoh: Ahmad Rizky" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none text-sm">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Nomor Absen</label>
+              <input type="number" id="studentAbsen" required min="1" max="50" placeholder="Contoh: 05" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Kelas</label>
+              <select id="studentClass" required class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none text-sm">
+                <option value="">-- Pilih Kelas --</option>
+                <option value="XII-1">XII-1</option>
+                <option value="XII-2">XII-2</option>
+                <option value="XII-3">XII-3</option>
+                <option value="XII-4">XII-4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-xs text-amber-800 dark:text-amber-300 space-y-1">
+            <p class="font-bold flex items-center space-x-1">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Aturan Pengerjaan:</span>
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-[11px]">
+              <li>Waktu pengerjaan maksimal <strong>36 Menit</strong>.</li>
+              <li>Sistem akan otomatis mengumpulkan jawaban saat waktu habis.</li>
+              <li>Skor Maksimum = 100 ($3A + 4B + 2C + 6D$).</li>
+            </ul>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-lg transition flex items-center justify-center space-x-2">
+            <span>Mulai Pengerjaan Evaluasi</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Phase 2: Exam Questions Interface (Hidden initially) -->
+      <div id="evaluasiExamPhase" class="hidden space-y-6">
+        
+        <!-- Sticky Timer & Identity Header Bar -->
+        <div class="sticky top-20 z-40 glass-card rounded-2xl p-4 shadow-xl flex flex-wrap items-center justify-between gap-4 border-2 border-emerald-500">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="text-xs">
+              <p class="font-bold text-slate-900 dark:text-white" id="displayExamName">Siswa</p>
+              <p class="text-slate-500 dark:text-slate-400" id="displayExamMeta">Kelas XII | Absen --</p>
+            </div>
+          </div>
+
+          <!-- Live Timer Display -->
+          <div class="flex items-center space-x-3 bg-red-500/10 dark:bg-red-950/50 px-4 py-2 rounded-xl border border-red-500/30">
+            <i class="fa-solid fa-stopwatch text-red-500 text-xl animate-pulse"></i>
+            <div>
+              <span class="block text-[10px] font-bold text-red-500 uppercase">Sisa Waktu Ujian</span>
+              <span id="examTimer" class="font-mono text-lg font-black text-red-600 dark:text-red-400">36:00</span>
+            </div>
+          </div>
+
+          <button onclick="submitExamManual()" class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition flex items-center space-x-1">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Selesai & Kirim Jawaban</span>
+          </button>
+        </div>
+
+        <!-- EXAM CONTENT CONTAINERS FOR 4 PARTS -->
+        <div id="examQuestionsContainer" class="space-y-8">
+          
+          <!-- BAGIAN A: 10 Soal PG Biasa (Weight 3 each = 30 points) -->
+          <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 border-l-8 border-indigo-600">
+            <div>
+              <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-xs rounded-md">BAGIAN A</span>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">10 Soal Pilihan Ganda (Satu Jawaban Benar)</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Bobot per soal = 3 poin. Total Poin = 30.</p>
+            </div>
+            <div id="partAQuestions" class="space-y-6"></div>
+          </div>
+
+          <!-- BAGIAN B: 5 Soal PG Kompleks / Centang (Weight 4 each = 20 points) -->
+          <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 border-l-8 border-purple-600">
+            <div>
+              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 font-extrabold text-xs rounded-md">BAGIAN B</span>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">5 Soal Pilihan Ganda Kompleks (Centang Jawaban Benar)</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Dapat memilih lebih dari satu jawaban (2, 3, atau 4 jawaban benar). Bobot per soal = 4 poin. Total Poin = 20.</p>
+            </div>
+            <div id="partBQuestions" class="space-y-6"></div>
+          </div>
+
+          <!-- BAGIAN C: 10 Soal Benar / Salah (Weight 2 each = 20 points) -->
+          <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 border-l-8 border-cyan-600">
+            <div>
+              <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-300 font-extrabold text-xs rounded-md">BAGIAN C</span>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">10 Soal Pernyataan (BENAR / SALAH)</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Bobot per soal = 2 poin. Total Poin = 20.</p>
+            </div>
+            <div id="partCQuestions" class="space-y-6"></div>
+          </div>
+
+          <!-- BAGIAN D: 5 Soal Menjodohkan (Weight 6 each = 30 points) -->
+          <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 border-l-8 border-amber-600">
+            <div>
+              <span class="px-3 py-1 bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 font-extrabold text-xs rounded-md">BAGIAN D</span>
+              <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">5 Soal Menjodohkan (3 Pasangan Pernyataan per Nomor)</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Setiap nomor berisi 3 pernyataan untuk dijodohkan. Bobot per nomor = 6 poin (2 poin per pasangan). Total Poin = 30.</p>
+            </div>
+            <div id="partDQuestions" class="space-y-6"></div>
+          </div>
+
+        </div>
+
+        <!-- Submit Bottom Button -->
+        <div class="text-center py-6">
+          <button onclick="submitExamManual()" class="px-8 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-base shadow-2xl transition transform hover:scale-105">
+            <i class="fa-solid fa-check-double mr-2"></i>
+            <span>SELESAIKAN UJIAN DAN LIHAT HASIL</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Phase 3: Results Score Modal / Display -->
+      <div id="evaluasiResultPhase" class="hidden glass-card rounded-3xl p-8 max-w-3xl mx-auto space-y-6 shadow-2xl border-t-8 border-indigo-600 animate-fadeIn">
+        <div class="text-center space-y-2">
+          <div class="w-20 h-20 rounded-full bg-indigo-600 text-white flex items-center justify-center mx-auto text-4xl shadow-lg">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">HASIL EVALUASI PEMBELAJARAN</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">BAB 2 PELUANG - MATEMATIKA KELAS XII SMA NEGERI 1 KERSANA</p>
+        </div>
+
+        <!-- Student Summary -->
+        <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-2xl flex flex-wrap justify-between items-center text-xs gap-2">
+          <div>
+            <span class="text-slate-500 dark:text-slate-400">Nama Siswa:</span>
+            <span id="resName" class="font-bold text-slate-900 dark:text-white ml-1">--</span>
+          </div>
+          <div>
+            <span class="text-slate-500 dark:text-slate-400">Kelas / Absen:</span>
+            <span id="resMeta" class="font-bold text-slate-900 dark:text-white ml-1">--</span>
+          </div>
+          <div>
+            <span class="text-slate-500 dark:text-slate-400">Waktu Pengerjaan:</span>
+            <span id="resTimeSpent" class="font-bold text-slate-900 dark:text-white ml-1">--</span>
+          </div>
+        </div>
+
+        <!-- Big Score Box -->
+        <div class="p-6 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-700 text-white text-center space-y-2 shadow-xl">
+          <span class="text-xs font-semibold uppercase tracking-widest text-indigo-200">SKOR AKHIR EVALUASI</span>
+          <div id="resFinalScore" class="text-5xl sm:text-7xl font-black tracking-tight">0</div>
+          <p id="resStatusBadge" class="inline-block px-4 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md">
+            SANGAT BAIK
+          </p>
+        </div>
+
+        <!-- Score Breakdown Breakdown -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div class="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900">
+            <span class="block text-[10px] font-bold text-indigo-600 dark:text-indigo-400">BAGIAN A (30)</span>
+            <span id="scoreA" class="text-lg font-black text-slate-900 dark:text-white">0</span>
+          </div>
+          <div class="p-3 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-100 dark:border-purple-900">
+            <span class="block text-[10px] font-bold text-purple-600 dark:text-purple-400">BAGIAN B (20)</span>
+            <span id="scoreB" class="text-lg font-black text-slate-900 dark:text-white">0</span>
+          </div>
+          <div class="p-3 rounded-xl bg-cyan-50 dark:bg-cyan-950/40 border border-cyan-100 dark:border-cyan-900">
+            <span class="block text-[10px] font-bold text-cyan-600 dark:text-cyan-400">BAGIAN C (20)</span>
+            <span id="scoreC" class="text-lg font-black text-slate-900 dark:text-white">0</span>
+          </div>
+          <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-100 dark:border-amber-900">
+            <span class="block text-[10px] font-bold text-amber-600 dark:text-amber-400">BAGIAN D (30)</span>
+            <span id="scoreD" class="text-lg font-black text-slate-900 dark:text-white">0</span>
+          </div>
+        </div>
+
+        <div class="text-center pt-4">
+          <button onclick="resetEvaluasiExam()" class="px-6 py-3 rounded-xl bg-slate-800 dark:bg-slate-700 hover:bg-slate-900 text-white text-xs font-bold transition">
+            <i class="fa-solid fa-rotate-right mr-1"></i>
+            <span>Ulangi Pengerjaan Evaluasi</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 6: PROFIL GURU                        -->
+    <!-- ========================================== -->
+    <section id="view-profil" class="tab-content hidden space-y-8 animate-fadeIn">
+      
+      <div class="glass-card rounded-3xl p-8 max-w-4xl mx-auto space-y-8 shadow-2xl border-t-8 border-indigo-600">
+        
+        <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+          <div class="w-28 h-28 rounded-3xl overflow-hidden bg-slate-100 dark:bg-slate-800 shadow-xl shrink-0 ring-4 ring-indigo-100 dark:ring-indigo-950">
+            <img src="https://main.sman1kersana.sch.id/wp-content/uploads/2026/09/M.-FAISAL-ABDUH.jpg"
+                 alt="Foto M. Faisal Abduh, M.Pd."
+                 class="w-full h-full object-cover"
+                 loading="lazy"
+                 referrerpolicy="no-referrer">
+          </div>
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-xs">GURU PENGAMPU MAPEL MATEMATIKA</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+              M. FAISAL ABDUH, M.Pd.
+            </h2>
+            <p class="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400">
+              NIP. 199104032020121014
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">
+              Unit Kerja: SMA NEGERI 1 KERSANA, Kab. Brebes, Jawa Tengah.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-200 dark:border-slate-800 pt-6 space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+            <i class="fa-solid fa-graduation-cap text-indigo-500"></i>
+            <span>Komitmen Pembelajaran Matematika</span>
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Mewujudkan pembelajaran matematika yang logis, kontekstual, kritis, dan menyenangkan bagi peserta didik SMA Negeri 1 Kersana melalui pemanfaatan teknologi interaktif dan pembelajaran berbasis masalah secara bermakna.
+          </p>
+        </div>
+
+        <!-- External CV Link Button -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-between bg-indigo-50 dark:bg-slate-800 p-6 rounded-2xl border border-indigo-100 dark:border-slate-700 gap-4">
+          <div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-sm">Curriculum Vitae (CV) & Portofolio Guru</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Kunjungi halaman GitHub resmi untuk melihat rekam jejak, pendidikan, karya, dan publikasi.</p>
+          </div>
+          <a href="https://gurufa119.github.io/cv" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold shadow-lg transition flex items-center space-x-2 whitespace-nowrap">
+            <i class="fa-solid fa-globe text-base"></i>
+            <span>Buka Web CV Guru</span>
+            <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 p-3.5 rounded-2xl bg-indigo-600 text-white shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:bg-indigo-700 hover:scale-110 z-50" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up text-lg"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="mt-12 py-6 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 MATEMATIKA KELAS XII SMA NEGERI 1 KERSANA | Guru Pengampu: M. FAISAL ABDUH, M.Pd.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ========================================== */
+    /* GLOBAL STATE & TAB NAVIGATION ENGINE      */
+    /* ========================================== */
+    let currentTab = 'home';
+
+    function switchTab(tabName) {
+      currentTab = tabName;
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+        btn.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-800');
+      });
+
+      const activeView = document.getElementById(`view-${tabName}`);
+      if (activeView) activeView.classList.remove('hidden');
+
+      const activeNav = document.getElementById(`nav-${tabName}`);
+      if (activeNav) {
+        activeNav.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-800');
+        activeNav.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Typeset MathJax equations on active view
+      if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise();
+      }
+    }
+
+    /* ========================================== */
+    /* DARK MODE & FULLSCREEN TOGGLE              */
+    /* ========================================== */
+    function toggleTheme() {
+      const html = document.documentElement;
+      const icon = document.getElementById('themeIcon');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        icon.className = 'fa-solid fa-moon text-lg';
+      } else {
+        html.classList.add('dark');
+        icon.className = 'fa-solid fa-sun text-lg';
+      }
+    }
+
+    function toggleFullscreen() {
+      const icon = document.getElementById('fullscreenIcon');
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.log("Fullscreen error:", err);
+        });
+        icon.className = 'fa-solid fa-compress text-lg';
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+        icon.className = 'fa-solid fa-expand text-lg';
+      }
+    }
+
+    /* ========================================== */
+    /* FLOATING BACK TO TOP BUTTON LOGIC          */
+    /* ========================================== */
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('backToTopBtn');
+      if (window.scrollY > 300) {
+        btn.classList.remove('opacity-0', 'pointer-events-none');
+        btn.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        btn.classList.add('opacity-0', 'pointer-events-none');
+        btn.classList.remove('opacity-100', 'pointer-events-auto');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ========================================== */
+    /* TWO-PLAYER RACE GAME ENGINE (GAME KUIS)   */
+    /* ========================================== */
+    const gameQuestionsPool = [
+      { q: "Peluang munculnya mata dadu genap pada pelemparan 1 dadu adalah...", opts: ["1/6", "1/3", "1/2", "2/3"], ans: 2 },
+      { q: "Dari huruf P-E-L-U-A-N-G, diambil 1 huruf. Peluang terambil huruf VOKAL adalah...", opts: ["2/7", "3/7", "4/7", "5/7"], ans: 1 },
+      { q: "Dua koin dilempar bersamaan. Peluang muncul KEDUA koin Gambar adalah...", opts: ["1/4", "1/2", "3/4", "1"], ans: 0 },
+      { q: "Peluang kejadian $A$ adalah $0{,}35$. Peluang komplemen $A^c$ adalah...", opts: ["0,35", "0,55", "0,65", "0,75"], ans: 2 },
+      { q: "Dadu dan koin dilempar bersamaan. Banyaknya anggota ruang sampel $n(S)$ adalah...", opts: ["8", "12", "16", "36"], ans: 1 },
+      { q: "Satu kartu diambil dari Remi (52 kartu). Peluang terambil kartu HATI adalah...", opts: ["1/13", "1/4", "1/2", "2/13"], ans: 1 },
+      { q: "Kejadian $A$ dan $B$ saling bebas. Jika $P(A)=0{,}4$ dan $P(B)=0{,}5$, maka $P(A \\cap B)=...$", opts: ["0,9", "0,1", "0,2", "0,45"], ans: 2 },
+      { q: "Dua dadu dilempar bersama. Peluang muncul jumlah mata dadu = 12 adalah...", opts: ["1/36", "2/36", "3/36", "6/36"], ans: 0 }
+    ];
+
+    let teamNames = {
+      team1: 'KELOMPOK 1',
+      team2: 'KELOMPOK 2'
+    };
+
+    let gameState = {
+      score1: 0,
+      score2: 0,
+      targetScore: 5,
+      currentQ1: 0,
+      currentQ2: 0,
+      active: false
+    };
+
+    function sanitizeTeamName(value, fallback) {
+      const cleaned = String(value || '').trim().replace(/\s+/g, ' ');
+      return cleaned ? cleaned.slice(0, 30) : fallback;
+    }
+
+    function updateTeamNameUI() {
+      const mappings = {
+        labelTeam1: teamNames.team1,
+        labelTeam2: teamNames.team2,
+        panelLabelTeam1: teamNames.team1,
+        panelLabelTeam2: teamNames.team2,
+        questionLabelTeam1: `SOAL ${teamNames.team1}`,
+        questionLabelTeam2: `SOAL ${teamNames.team2}`
+      };
+
+      Object.entries(mappings).forEach(([id, value]) => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = value;
+      });
+
+      const input1 = document.getElementById('teamNameInput1');
+      const input2 = document.getElementById('teamNameInput2');
+      if (input1) input1.value = teamNames.team1;
+      if (input2) input2.value = teamNames.team2;
+    }
+
+    function loadTeamNames() {
+      try {
+        const saved1 = localStorage.getItem('bab2_peluang_team1');
+        const saved2 = localStorage.getItem('bab2_peluang_team2');
+        teamNames.team1 = sanitizeTeamName(saved1, 'KELOMPOK 1');
+        teamNames.team2 = sanitizeTeamName(saved2, 'KELOMPOK 2');
+      } catch (e) {
+        teamNames.team1 = 'KELOMPOK 1';
+        teamNames.team2 = 'KELOMPOK 2';
+      }
+      updateTeamNameUI();
+    }
+
+    function applyTeamNames(showStatus = true) {
+      const input1 = document.getElementById('teamNameInput1');
+      const input2 = document.getElementById('teamNameInput2');
+
+      teamNames.team1 = sanitizeTeamName(input1 ? input1.value : teamNames.team1, 'KELOMPOK 1');
+      teamNames.team2 = sanitizeTeamName(input2 ? input2.value : teamNames.team2, 'KELOMPOK 2');
+
+      updateTeamNameUI();
+
+      try {
+        localStorage.setItem('bab2_peluang_team1', teamNames.team1);
+        localStorage.setItem('bab2_peluang_team2', teamNames.team2);
+      } catch (e) {
+        // Abaikan bila penyimpanan lokal tidak tersedia.
+      }
+
+      const status = document.getElementById('teamNameStatus');
+      if (showStatus && status) {
+        status.innerText = `Nama kelompok diterapkan: ${teamNames.team1} vs ${teamNames.team2}`;
+        status.className = 'mt-3 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 min-h-[16px]';
+      }
+    }
+
+    function initGameEngine() {
+      applyTeamNames(false);
+      gameState.score1 = 0;
+      gameState.score2 = 0;
+      gameState.currentQ1 = 0;
+      gameState.currentQ2 = 1;
+      gameState.active = true;
+
+      updateGameUI();
+      renderGameQuestion(1);
+      renderGameQuestion(2);
+    }
+
+    function updateGameUI() {
+      document.getElementById('scoreTeam1').innerText = `${gameState.score1} / ${gameState.targetScore}`;
+      document.getElementById('scoreTeam2').innerText = `${gameState.score2} / ${gameState.targetScore}`;
+
+      const pct1 = (gameState.score1 / gameState.targetScore) * 85;
+      const pct2 = (gameState.score2 / gameState.targetScore) * 85;
+
+      document.getElementById('carTeam1').style.left = `${pct1}%`;
+      document.getElementById('carTeam2').style.left = `${pct2}%`;
+    }
+
+    function renderGameQuestion(teamNum) {
+      if (!gameState.active) return;
+
+      const qIdx = teamNum === 1 ? gameState.currentQ1 : gameState.currentQ2;
+      const qObj = gameQuestionsPool[qIdx % gameQuestionsPool.length];
+
+      const qTextEl = document.getElementById(`qTextTeam${teamNum}`);
+      const optsEl = document.getElementById(`optsTeam${teamNum}`);
+      const feedbackEl = document.getElementById(`feedbackTeam${teamNum}`);
+
+      feedbackEl.innerText = '';
+      qTextEl.innerText = `Soal ${qIdx + 1}: ${qObj.q}`;
+
+      optsEl.innerHTML = '';
+      qObj.opts.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full py-2 px-3 text-xs font-semibold rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 transition text-left';
+        btn.innerText = `${String.fromCharCode(65 + idx)}. ${opt}`;
+        btn.onclick = () => handleGameAnswer(teamNum, idx, qObj.ans);
+        optsEl.appendChild(btn);
+      });
+
+      if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+    }
+
+    function handleGameAnswer(teamNum, selectedIdx, correctIdx) {
+      if (!gameState.active) return;
+
+      const feedbackEl = document.getElementById(`feedbackTeam${teamNum}`);
+
+      if (selectedIdx === correctIdx) {
+        feedbackEl.className = 'mt-3 text-center text-xs font-bold text-emerald-500';
+        feedbackEl.innerText = '✅ TEPAT SEKALI! MOBIL MAJU!';
+        
+        if (teamNum === 1) gameState.score1++;
+        else gameState.score2++;
+
+        updateGameUI();
+
+        // Check Winner
+        if (gameState.score1 >= gameState.targetScore || gameState.score2 >= gameState.targetScore) {
+          gameState.active = false;
+          const winnerName = gameState.score1 >= gameState.targetScore ? teamNames.team1 : teamNames.team2;
+          setTimeout(() => {
+            alert(`🎉 SELAMAT! ${winnerName} MENANG DALAM BALAPAN PELUANG! 🎉`);
+          }, 200);
+          return;
+        }
+
+        if (teamNum === 1) gameState.currentQ1 += 2;
+        else gameState.currentQ2 += 2;
+
+        setTimeout(() => renderGameQuestion(teamNum), 800);
+
+      } else {
+        feedbackEl.className = 'mt-3 text-center text-xs font-bold text-red-500';
+        feedbackEl.innerText = '❌ JAWABAN KURANG TEPAT!';
+      }
+    }
+
+
+    /* ========================================== */
+    /* EVALUASI EXAM ENGINE (FORM, TIMER, 4 PARTS)*/
+    /* ========================================== */
+    let studentData = { name: '', absen: '', kelas: '' };
+    let examTimeRemaining = 36 * 60; // 36 minutes in seconds
+    let examTimerInterval = null;
+
+    // Evaluasi Questions Data
+    const evalPartAData = [
+      { q: "1. Pada pelemparan 3 koin uang logam serentak, peluang muncul sekurang-kurangnya 2 gambar adalah...", opts: ["1/8", "3/8", "1/2", "5/8", "7/8"], ans: 2 },
+      { q: "2. Suatu dadu bermata 6 dilempar sekali. Peluang muncul mata dadu prima adalah...", opts: ["1/6", "1/3", "1/2", "2/3", "5/6"], ans: 2 },
+      { q: "3. Peluang seorang pemanah menembak tepat sasaran adalah 0,8. Jika ia memanah 50 kali, frekuensi harapannya adalah...", opts: ["30", "35", "40", "42", "45"], ans: 2 },
+      { q: "4. Sebuah kotak berisi 5 bola merah dan 3 bola putih. Diambil 2 bola satu per satu tanpa pengembalian. Peluang kedua bola merah adalah...", opts: ["5/14", "15/56", "25/64", "10/28", "15/28"], ans: 0 },
+      { q: "5. Dua dadu dilempar bersamaan. Peluang muncul jumlah mata dadu genap ATAU jumlah mata dadu 5 adalah...", opts: ["18/36", "22/36", "24/36", "26/36", "28/36"], ans: 1 },
+      { q: "6. Jika $P(A) = 0{,}6$, $P(B) = 0{,}5$, dan $P(A \\cup B) = 0{,}8$, maka peluang irisan $P(A \\cap B)$ adalah...", opts: ["0,1", "0,2", "0,3", "0,4", "0,5"], ans: 2 },
+      { q: "7. Dari sekelompok siswa, 60% menyukai Matematika, 50% menyukai Fisika, dan 30% menyukai keduanya. Peluang terpilih siswa yang menyukai Matematika ATAU Fisika adalah...", opts: ["0,70", "0,80", "0,90", "0,95", "1,00"], ans: 1 },
+      { q: "8. Dalam satu set kartu Remi (52 kartu), diambil 1 kartu. Peluang terambil kartu bernomor Kiting ATAU bernomor Gambar (J, Q, K) adalah...", opts: ["13/52", "22/52", "25/52", "28/52", "32/52"], ans: 1 },
+      { q: "9. Dua kejadian $A$ dan $B$ saling bebas. Jika $P(A) = 1/3$ dan $P(B) = 1/4$, maka $P(A \\cup B)$ adalah...", opts: ["1/12", "1/2", "7/12", "1/7", "5/12"], ans: 1 }, // P(A)+P(B)-P(AB) = 1/3+1/4 - 1/12 = 6/12 = 1/2
+      { q: "10. Sebuah kantong memuat 4 kelereng biru dan 6 kelereng kuning. Diambil 2 kelereng sekaligus. Peluang keduanya berbeda warna adalah...", opts: ["8/15", "7/15", "6/15", "9/15", "11/15"], ans: 0 }
+    ];
+
+    const evalPartBData = [
+      { q: "1. Manakah dari pernyataan berikut yang BENAR mengenai pelemparan sebuah dadu bermata 6? (Pilih 2 atau lebih)", opts: ["Ruang sampel n(S) = 6", "Peluang muncul angka genap = 1/2", "Peluang muncul angka > 4 = 1/2", "Peluang muncul angka 7 = 1/6"], correctIndices: [0, 1] },
+      { q: "2. Manakah sifat-sifat peluang yang TEPAT di bawah ini? (Pilih 2 atau lebih)", opts: ["Nilai peluang P(A) selalu di antara 0 dan 1", "Peluang kejadian pasti bernilai 1", "Peluang kejadian mustahil bernilai -1", "P(A) + P(A^c) = 1"], correctIndices: [0, 1, 3] },
+      { q: "3. Pada pelemparan 2 koin uang logam, manakah pernyataan yang BENAR? (Pilih 2 atau lebih)", opts: ["Banyak titik sampel n(S) = 4", "Peluang 2 Angka = 1/4", "Peluang minimal 1 Angka = 3/4", "Peluang tidak ada Gambar = 1/2"], correctIndices: [0, 1, 2] },
+      { q: "4. Manakah rumus peluang kejadian majemuk yang BENAR? (Pilih 2 atau lebih)", opts: ["Saling Lepas: P(A∪B) = P(A) + P(B)", "Saling Bebas: P(A∩B) = P(A) × P(B)", "Frekuensi Harapan: Fh = n × P(A)", "Tidak Saling Lepas: P(A∪B) = P(A) × P(B)"], correctIndices: [0, 1, 2] },
+      { q: "5. Kotak berisi 3 bola merah & 2 bola biru. Diambil 1 bola acak. Manakah yang BENAR? (Pilih 2 atau lebih)", opts: ["Peluang terambil bola merah = 3/5", "Peluang terambil bola biru = 2/5", "Jumlah peluang merah + biru = 1", "Peluang terambil bola hijau = 1/5"], correctIndices: [0, 1, 2] }
+    ];
+
+    const evalPartCData = [
+      { q: "1. Ruang sampel pelemparan sebuah dadu dan sebuah koin berjumlah 12 titik sampel.", ans: true },
+      { q: "2. Nilai peluang suatu kejadian mungkin bernilai 1,25.", ans: false },
+      { q: "3. Kejadian saling lepas adalah kejadian yang tidak memiliki irisan anggota bersama.", ans: true },
+      { q: "4. Peluang komplemen P(A') selalu sama dengan 1 + P(A).", ans: false },
+      { q: "5. Jika P(A) = 0,4 dan n = 100, maka frekuensi harapan Fh(A) = 40.", ans: true },
+      { q: "6. Pada dua dadu dilempar bersama, peluang jumlah mata dadu 13 adalah 1/36.", ans: false },
+      { q: "7. Dua kejadian dikatakan saling bebas jika kejadian satu mempengaruhi kejadian lainnya.", ans: false },
+      { q: "8. Peluang terambil kartu As dari satu set kartu Remi adalah 4/52.", ans: true },
+      { q: "9. Jika A dan B saling lepas, maka P(A ∩ B) = 0.", ans: true },
+      { q: "10. Peluang bersyarat P(A|B) dihitung dengan membagi P(A ∩ B) dengan P(B).", ans: true }
+    ];
+
+    const evalPartDData = [
+      {
+        no: 1,
+        title: "Soal Menjodohkan 1: Konsep Peluang Dasar",
+        items: [
+          { stmt: "Ruang sampel pelemparan 1 dadu", correct: "n(S) = 6", opts: ["n(S) = 6", "P(A) = 1", "P(A) = 0"] },
+          { stmt: "Peluang kejadian yang pasti terjadi", correct: "P(A) = 1", opts: ["n(S) = 6", "P(A) = 1", "P(A) = 0"] },
+          { stmt: "Peluang kejadian yang mustahil terjadi", correct: "P(A) = 0", opts: ["n(S) = 6", "P(A) = 1", "P(A) = 0"] }
+        ]
+      },
+      {
+        no: 2,
+        title: "Soal Menjodohkan 2: Peluang Kejadian Majemuk",
+        items: [
+          { stmt: "Kejadian tanpa irisan anggota (A ∩ B = ∅)", correct: "Saling Lepas", opts: ["Saling Lepas", "Saling Bebas", "Bersyarat"] },
+          { stmt: "Kejadian yang tidak saling mempengaruhi", correct: "Saling Bebas", opts: ["Saling Lepas", "Saling Bebas", "Bersyarat"] },
+          { stmt: "Peluang A dengan syarat B telah terjadi", correct: "Bersyarat", opts: ["Saling Lepas", "Saling Bebas", "Bersyarat"] }
+        ]
+      },
+      {
+        no: 3,
+        title: "Soal Menjodohkan 3: Hasil Pelemparan Koin",
+        items: [
+          { stmt: "Banyak anggota ruang sampel 2 koin", correct: "4", opts: ["2", "4", "8"] },
+          { stmt: "Banyak anggota ruang sampel 3 koin", correct: "8", opts: ["2", "4", "8"] },
+          { stmt: "Banyak anggota ruang sampel 1 koin", correct: "2", opts: ["2", "4", "8"] }
+        ]
+      },
+      {
+        no: 4,
+        title: "Soal Menjodohkan 4: Kartu Remi (52 Kartu)",
+        items: [
+          { stmt: "Banyaknya kartu King dalam 1 set Remi", correct: "4 Kartu", opts: ["4 Kartu", "13 Kartu", "26 Kartu"] },
+          { stmt: "Banyaknya kartu berwarna Merah", correct: "26 Kartu", opts: ["4 Kartu", "13 Kartu", "26 Kartu"] },
+          { stmt: "Banyaknya kartu bergambar Sekop (Spade)", correct: "13 Kartu", opts: ["4 Kartu", "13 Kartu", "26 Kartu"] }
+        ]
+      },
+      {
+        no: 5,
+        title: "Soal Menjodohkan 5: Rumus-Rumus Peluang",
+        items: [
+          { stmt: "Rumus Peluang Komplemen P(A^c)", correct: "1 - P(A)", opts: ["1 - P(A)", "n × P(A)", "P(A) + P(B)"] },
+          { stmt: "Rumus Frekuensi Harapan Fh", correct: "n × P(A)", opts: ["1 - P(A)", "n × P(A)", "P(A) + P(B)"] },
+          { stmt: "Rumus Peluang Saling Lepas", correct: "P(A) + P(B)", opts: ["1 - P(A)", "n × P(A)", "P(A) + P(B)"] }
+        ]
+      }
+    ];
+
+    function startEvaluasiExam(e) {
+      e.preventDefault();
+      studentData.name = document.getElementById('studentName').value;
+      studentData.absen = document.getElementById('studentAbsen').value;
+      studentData.kelas = document.getElementById('studentClass').value;
+
+      document.getElementById('displayExamName').innerText = studentData.name;
+      document.getElementById('displayExamMeta').innerText = `Kelas ${studentData.kelas} | No. Absen ${studentData.absen}`;
+
+      document.getElementById('evaluasiFormPhase').classList.add('hidden');
+      document.getElementById('evaluasiExamPhase').classList.remove('hidden');
+
+      renderExamQuestions();
+
+      // Start 36 Minute Timer
+      examTimeRemaining = 36 * 60;
+      updateTimerDisplay();
+      if (examTimerInterval) clearInterval(examTimerInterval);
+      examTimerInterval = setInterval(() => {
+        examTimeRemaining--;
+        updateTimerDisplay();
+        if (examTimeRemaining <= 0) {
+          clearInterval(examTimerInterval);
+          alert("⏱️ Waktu ujian 36 menit telah habis! Sistem akan mengumpulkan jawaban Anda secara otomatis.");
+          submitExamManual();
+        }
+      }, 1000);
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(examTimeRemaining / 60);
+      const secs = examTimeRemaining % 60;
+      document.getElementById('examTimer').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    function renderExamQuestions() {
+      // BAGIAN A
+      const boxA = document.getElementById('partAQuestions');
+      boxA.innerHTML = '';
+      evalPartAData.forEach((qObj, qIdx) => {
+        const item = document.createElement('div');
+        item.className = 'p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3';
+        item.innerHTML = `
+          <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">${qObj.q}</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            ${qObj.opts.map((opt, oIdx) => `
+              <label class="flex items-center space-x-2 p-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 cursor-pointer hover:bg-indigo-50 dark:hover:bg-slate-800">
+                <input type="radio" name="partA_q${qIdx}" value="${oIdx}" class="text-indigo-600 focus:ring-indigo-500">
+                <span>${String.fromCharCode(65 + oIdx)}. ${opt}</span>
+              </label>
+            `).join('')}
+          </div>
+        `;
+        boxA.appendChild(item);
+      });
+
+      // BAGIAN B
+      const boxB = document.getElementById('partBQuestions');
+      boxB.innerHTML = '';
+      evalPartBData.forEach((qObj, qIdx) => {
+        const item = document.createElement('div');
+        item.className = 'p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3';
+        item.innerHTML = `
+          <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">${qObj.q}</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            ${qObj.opts.map((opt, oIdx) => `
+              <label class="flex items-center space-x-2 p-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 cursor-pointer hover:bg-purple-50 dark:hover:bg-slate-800">
+                <input type="checkbox" name="partB_q${qIdx}" value="${oIdx}" class="rounded text-purple-600 focus:ring-purple-500">
+                <span>${opt}</span>
+              </label>
+            `).join('')}
+          </div>
+        `;
+        boxB.appendChild(item);
+      });
+
+      // BAGIAN C
+      const boxC = document.getElementById('partCQuestions');
+      boxC.innerHTML = '';
+      evalPartCData.forEach((qObj, qIdx) => {
+        const item = document.createElement('div');
+        item.className = 'p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3';
+        item.innerHTML = `
+          <p class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 flex-grow">${qObj.q}</p>
+          <div class="flex items-center space-x-3 shrink-0 text-xs font-bold">
+            <label class="flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 cursor-pointer">
+              <input type="radio" name="partC_q${qIdx}" value="true" class="text-emerald-600">
+              <span>BENAR</span>
+            </label>
+            <label class="flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300 cursor-pointer">
+              <input type="radio" name="partC_q${qIdx}" value="false" class="text-red-600">
+              <span>SALAH</span>
+            </label>
+          </div>
+        `;
+        boxC.appendChild(item);
+      });
+
+      // BAGIAN D
+      const boxD = document.getElementById('partDQuestions');
+      boxD.innerHTML = '';
+      evalPartDData.forEach((qGroup, gIdx) => {
+        const groupEl = document.createElement('div');
+        groupEl.className = 'p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-4';
+        groupEl.innerHTML = `
+          <h4 class="text-xs sm:text-sm font-extrabold text-amber-600 dark:text-amber-400 uppercase">${qGroup.title}</h4>
+          <div class="space-y-3">
+            ${qGroup.items.map((item, iIdx) => `
+              <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs">
+                <span class="font-semibold text-slate-700 dark:text-slate-200 sm:w-1/2">${iIdx + 1}) ${item.stmt}</span>
+                <div class="flex items-center space-x-2 w-full sm:w-auto">
+                  <span class="text-slate-400">➡️ Pasangan:</span>
+                  <select name="partD_g${gIdx}_i${iIdx}" class="w-full sm:w-auto px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white font-bold text-xs outline-none focus:ring-2 focus:ring-amber-500">
+                    <option value="">-- Pilih Jodoh --</option>
+                    ${item.opts.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+                  </select>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        boxD.appendChild(groupEl);
+      });
+
+      if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+    }
+
+    function submitExamManual() {
+      if (examTimerInterval) clearInterval(examTimerInterval);
+
+      // Calculate Scores
+      let scoreA = 0;
+      let scoreB = 0;
+      let scoreC = 0;
+      let scoreD = 0;
+
+      // Bagian A (10 x 3 = 30)
+      evalPartAData.forEach((qObj, idx) => {
+        const sel = document.querySelector(`input[name="partA_q${idx}"]:checked`);
+        if (sel && parseInt(sel.value) === qObj.ans) {
+          scoreA += 3;
+        }
+      });
+
+      // Bagian B (5 x 4 = 20)
+      evalPartBData.forEach((qObj, idx) => {
+        const checkedBoxes = Array.from(document.querySelectorAll(`input[name="partB_q${idx}"]:checked`)).map(cb => parseInt(cb.value));
+        const isExactMatch = checkedBoxes.length === qObj.correctIndices.length && checkedBoxes.every(v => qObj.correctIndices.includes(v));
+        if (isExactMatch) {
+          scoreB += 4;
+        }
+      });
+
+      // Bagian C (10 x 2 = 20)
+      evalPartCData.forEach((qObj, idx) => {
+        const sel = document.querySelector(`input[name="partC_q${idx}"]:checked`);
+        if (sel && (sel.value === 'true') === qObj.ans) {
+          scoreC += 2;
+        }
+      });
+
+      // Bagian D (5 x 6 = 30, each match = 2 points)
+      evalPartDData.forEach((gObj, gIdx) => {
+        gObj.items.forEach((item, iIdx) => {
+          const sel = document.querySelector(`select[name="partD_g${gIdx}_i${iIdx}"]`);
+          if (sel && sel.value === item.correct) {
+            scoreD += 2;
+          }
+        });
+      });
+
+      const totalScore = scoreA + scoreB + scoreC + scoreD;
+      const timeSpentSec = (36 * 60) - examTimeRemaining;
+      const timeSpentMins = Math.floor(timeSpentSec / 60);
+      const timeSpentSecsRem = timeSpentSec % 60;
+
+      // Render Result View
+      document.getElementById('resName').innerText = studentData.name;
+      document.getElementById('resMeta').innerText = `Kelas ${studentData.kelas} / Absen ${studentData.absen}`;
+      document.getElementById('resTimeSpent').innerText = `${timeSpentMins} m ${timeSpentSecsRem} s`;
+
+      document.getElementById('resFinalScore').innerText = totalScore;
+      document.getElementById('scoreA').innerText = `${scoreA} / 30`;
+      document.getElementById('scoreB').innerText = `${scoreB} / 20`;
+      document.getElementById('scoreC').innerText = `${scoreC} / 20`;
+      document.getElementById('scoreD').innerText = `${scoreD} / 30`;
+
+      const badge = document.getElementById('resStatusBadge');
+      if (totalScore >= 85) {
+        badge.innerText = "SANGAT MEMUASKAN (ISTIMEWA)";
+        badge.className = "inline-block px-4 py-1 rounded-full text-xs font-bold bg-emerald-400 text-slate-900";
+      } else if (totalScore >= 70) {
+        badge.innerText = "LULUS KKM (BAIK)";
+        badge.className = "inline-block px-4 py-1 rounded-full text-xs font-bold bg-cyan-400 text-slate-900";
+      } else {
+        badge.innerText = "PERLU REMEDIAL & LATIHAN";
+        badge.className = "inline-block px-4 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-900";
+      }
+
+      document.getElementById('evaluasiExamPhase').classList.add('hidden');
+      document.getElementById('evaluasiResultPhase').classList.remove('hidden');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function resetEvaluasiExam() {
+      document.getElementById('evaluasiResultPhase').classList.add('hidden');
+      document.getElementById('evaluasiFormPhase').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ========================================== */
+    /* INITIALIZATION ON PAGE LOAD                */
+    /* ========================================== */
+    window.onload = function() {
+      loadTeamNames();
+      switchTab('home');
+      initGameEngine();
+    };
+  </script>
+</body>
+</html>
